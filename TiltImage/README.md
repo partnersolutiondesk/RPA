@@ -63,14 +63,6 @@ config = {
 results = rotate_documents(config)
 ```
 
-### CLI (if running the script directly)
-```bash
-python rotate_documents.py
-```
-(Default config inside the script uses `path/to/your/documents` → `corrected_documents`.)
-
----
-
 ## 📂 Output
 - Corrected images are saved in the configured output directory.  
 - PDFs are split into per-page **PNG images**.  
@@ -104,14 +96,7 @@ Unlike Tesseract’s OSD, this approach works even when `osd.traineddata` is mis
 
 ---
 
-## 📝 Example Log Entry
-```
-Angle 0°: word_score=14.0, conf_score=10.5, line_score=2.1, total=26.6
-Angle 90°: word_score=2.0, conf_score=0.5, line_score=0.0, total=2.5
-Angle 180°: word_score=1.0, conf_score=0.0, line_score=0.0, total=1.0
-Angle 270°: word_score=0.0, conf_score=0.0, line_score=0.0, total=0.0
-Direct OCR result: 0° rotation needed (confidence: 53.2)
-Saved corrected page: corrected_documents/sample_page_001_corrected.png
+
 ```
 
 ---

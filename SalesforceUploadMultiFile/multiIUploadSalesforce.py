@@ -7,7 +7,7 @@ dotenv.load_dotenv()
 
 def get_access_token():
 
-    url = os.getenv("url")
+    url =  f"{os.getenv('instance_url')}/services/oauth2/token"
     bs4 = os.getenv("bs4")
     payload = os.getenv("payload")
     headers = {
@@ -70,3 +70,7 @@ def upload_files_multi(params):
         f.close()
 
     return res.status_code, res.json()
+
+# Sample usage
+param = {"filepaths":[r"C:\Users\syed.hasnain\Downloads\out\sampPy.py",r"C:\Users\syed.hasnain\Downloads\out\input.xlsx"],"case_id":"500dn00000JK6UXAA1"}
+print(upload_files_multi(param))

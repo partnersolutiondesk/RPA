@@ -2,5 +2,5 @@ First run the 'request\_list\_ids\_to\_csv()' function to get the list of reques
 
 
 
-Then run the delete\_records\_from\_csv(csv\_path) function to delete the requests. The maximum number of requests that can be deleted 
+Then run the delete\_records\_from\_csv(csv\_path) function to delete the requests. The maximum number of requests that can be deleted 2000
 

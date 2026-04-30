@@ -23,5 +23,7 @@ A Python utility to parent folder and its children folder
 - Fetch your API token from the control, add it in the api_key parameter of the script
 - Add your control room URL for in the URL parameter
 - Get the public folder ID from the endpoint.
+- <img width="877" height="398" alt="image" src="https://github.com/user-attachments/assets/49251d57-6aaa-4461-9b81-c095f8d5d21d" />
+
 
 

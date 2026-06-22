@@ -1,0 +1,11 @@
+# Output files
+*.xlsx
+*.log
+debug_*.json
+
+# Temporary files
+*.tmp
+*.bak
+
+# Word documents (if not needed in repo)
+*.docx

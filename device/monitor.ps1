@@ -189,7 +189,7 @@ class DeviceMonitor {
 # ==========================
 # Main Script
 # ==========================
-$baseUrl = "https://aa-pet-us-17.my.automationanywhere.digital"
+$baseUrl = "YOUR_BASE_URL_HERE"
 
 $hostnames = @() #acts as filter eg;"n9k", "ywz"
 

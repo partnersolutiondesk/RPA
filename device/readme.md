@@ -42,7 +42,7 @@ $USERNAME = "ywz"        # Your Control Room username
 $password = "pass"            # Your Control Room password
 $CHECK_INTERVAL = 30              # Seconds between device checks
 $logPath = "disconnected_devices.log"  # Log file path
-$baseUrl = "https://aa-pet-us-17.my.automationanywhere.digital"  # Control Room URL
+$baseUrl = "YOUR_BASE_URL_HERE"  # Control Room URL
 $hostnames = @()                  # Hostnames to filter (use @() to monitor ALL)
 ```
 

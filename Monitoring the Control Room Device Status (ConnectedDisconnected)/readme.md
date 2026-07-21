@@ -1,4 +1,4 @@
-# monitor.ps1 - Device Monitoring Script
+Monitoring the Control Room Device Status (Connected/Disconnected)
 
 PowerShell implementation of the Automation Anywhere Device Monitor
 

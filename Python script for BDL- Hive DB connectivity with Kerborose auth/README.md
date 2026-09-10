@@ -1,7 +1,7 @@
-# Hive Connection Script (test_hive.py)
+# Python Script for BDL - Hive DB Connectivity with Kerberos Auth (test_hive.py)
 
-This script connects to a Kerberos-authenticated Hive database using Python
-and performs basic operations: connect, select, insert, update, delete.
+This script connects to a **Kerberos-authenticated** Hive database (BDL) using
+Python and performs basic operations: connect, select, insert, update, delete.
 
 ## 1. Prerequisites
 
@@ -13,35 +13,6 @@ Check with:
 ```
 python --version
 ```
-
-## Quick Reference: Libraries to Install
-
-Run this in Command Prompt before running the script:
-
-```
-pip install pyhive thrift thrift_sasl gssapi
-```
-
-If `gssapi` or `thrift_sasl` fail to install on Windows (common — they
-sometimes need C++ build tools), install this instead:
-
-```
-pip install pure-sasl
-```
-
-What each library does:
-| Library | Purpose |
-|---|---|
-| `pyhive` | Main library used to connect to and query Hive |
-| `thrift` | Underlying protocol pyhive uses to talk to Hive |
-| `thrift_sasl` | Handles the authentication layer (needed for Kerberos) |
-| `gssapi` | Provides Kerberos support for Python |
-| `pure-sasl` | Fallback if `gssapi`/`thrift_sasl` fail to install |
-
-Note: **MIT Kerberos for Windows** is also required, but it is installed
-separately (not via `pip`) — see Prerequisites below.
-
----
 
 ### b) MIT Kerberos for Windows
 
@@ -84,17 +55,30 @@ Confirm the machine running this script can reach:
 
 ## 2. Required Python Libraries
 
-Install these before running the script:
+Run this in Command Prompt before running the script:
 
 ```
 pip install pyhive thrift thrift_sasl gssapi
 ```
 
-If `gssapi` or `thrift_sasl` fail to install on Windows, try:
+If `gssapi` or `thrift_sasl` fail to install on Windows (common — they
+sometimes need C++ build tools), install this instead:
 
 ```
 pip install pure-sasl
 ```
+
+What each library does:
+| Library | Purpose |
+|---|---|
+| `pyhive` | Main library used to connect to and query Hive |
+| `thrift` | Underlying protocol pyhive uses to talk to Hive |
+| `thrift_sasl` | Handles the authentication layer (needed for Kerberos) |
+| `gssapi` | Provides Kerberos support for Python |
+| `pure-sasl` | Fallback if `gssapi`/`thrift_sasl` fail to install |
+
+Note: **MIT Kerberos for Windows** is also required, but it is installed
+separately (not via `pip`) — see Prerequisites below.
 
 ---
 

@@ -1,0 +1,32 @@
+(15-01-2026 10.00.00 AM) INFO BotPackageInventory (action): Log file started.
+(15-01-2026 10.00.00 AM) DEBUG BotPackageInventory (action): get_report called with folder_id: 1001
+(15-01-2026 10.00.04 AM) INFO BotPackageInventory (authenticate): Authenticated user 'demo.user' on https://example-controlroom.my.automationanywhere.digital
+(15-01-2026 10.00.10 AM) DEBUG BotPackageInventory (listPackageArtifacts): Got artifact names for 60 packages
+(15-01-2026 10.00.11 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1001
+(15-01-2026 10.00.13 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1002
+(15-01-2026 10.00.15 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1003
+(15-01-2026 10.00.18 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1004
+(15-01-2026 10.00.21 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1005
+(15-01-2026 10.00.24 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1006
+(15-01-2026 10.00.27 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1007
+(15-01-2026 10.00.28 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1008
+(15-01-2026 10.00.31 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1009
+(15-01-2026 10.20.00 AM) INFO BotPackageInventory (action): Log file started.
+(15-01-2026 10.20.00 AM) DEBUG BotPackageInventory (action): get_report called with folder_id: 1001
+(15-01-2026 10.20.02 AM) INFO BotPackageInventory (authenticate): Authenticated user 'demo.user' on https://example-controlroom.my.automationanywhere.digital
+(15-01-2026 10.20.06 AM) WARN BotPackageInventory (POST): Call to https://example-controlroom.my.automationanywhere.digital/v3/packages/package/list failed: Connection reset
+(15-01-2026 10.20.06 AM) WARN BotPackageInventory (call): POST /v3/packages/package/list attempt 1 of 3 failed
+(15-01-2026 10.20.12 AM) DEBUG BotPackageInventory (listPackageArtifacts): Got artifact names for 60 packages
+(15-01-2026 10.20.12 AM) INFO BotPackageInventory (loadProgress): Resuming an earlier run: 25 bots already done and will be skipped
+(15-01-2026 10.20.14 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1010
+(15-01-2026 10.20.16 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1011
+(15-01-2026 10.20.19 AM) DEBUG BotPackageInventory (scan): inside fetch folder 1012
+(15-01-2026 10.20.22 AM) INFO BotPackageInventory (writeReportFromProgress): Report saved to C:\Users\demo.user\Desktop\OUTPUT\PackageReport.xlsx: 145 full report rows, 33 bots
+(15-01-2026 10.20.22 AM) INFO BotPackageInventory (scan): Finished: {folders=12, bots_ok=33, full_rows=145} in 22s, scan complete: true
+(15-01-2026 10.20.22 AM) INFO BotPackageInventory (action): Scan finished. Summary: {
+    "bots_read": 8,
+    "bots_failed": 0,
+    "bots_skipped_from_earlier_run": 25,
+    "folders_failed": 0,
+    "report": "C:\\Users\\demo.user\\Desktop\\OUTPUT\\PackageReport.xlsx"
+}
